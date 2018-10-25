@@ -1,5 +1,5 @@
 import React from 'react';
-import ChannelList from './channel_list';
+import ChannelList from '../containers/channel_list';
 import ChatRoom from '../containers/chat_room';
 
 const App = () => {

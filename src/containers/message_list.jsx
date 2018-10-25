@@ -12,13 +12,13 @@ class MessageList extends Component {
   }
 
   componentDidMount() {
-    // const interval = setInterval(() => {
-    //   this.props.fetchMessages(this.props.channel)
-    // },5000);
+    const interval = setInterval(() => {
+      this.props.fetchMessages(this.props.channel)
+    },8000);
   }
 
   componentWillUnmount() {
-    // clearInterval(interval);
+    clearInterval(interval);
   }
 
   render() {
