@@ -11,6 +11,16 @@ class MessageList extends Component {
     this.props.fetchMessages(this.props.channel);
   }
 
+  componentDidMount() {
+    // const interval = setInterval(() => {
+    //   this.props.fetchMessages(this.props.channel)
+    // },5000);
+  }
+
+  componentWillUnmount() {
+    // clearInterval(interval);
+  }
+
   render() {
     return (
       <div>
