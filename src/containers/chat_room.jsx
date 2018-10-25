@@ -17,7 +17,7 @@ class ChatRoom extends Component {
       <div className="col-xs-9">
         <div className="chat-room">
           <div className="chat-room__title">
-            <h3>Channel title</h3>
+            <h3>{this.props.selectedChannel}</h3>
           </div>
           <div className="chat-room__messages">
             <MessageList />
@@ -32,7 +32,9 @@ class ChatRoom extends Component {
 }
 
 function mapStateToProps(state) {
-  return {};
+  return {
+    selectedChannel: state.selectedChannel
+  };
 }
 
 // export default ChatRoom;
